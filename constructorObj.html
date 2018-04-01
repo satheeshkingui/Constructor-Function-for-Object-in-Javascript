@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Construtor Object</title>
+</head>
+<body>
+	<h2>Check the result console panel</h2>
+	
+<script>
+	function studentInfo(id, rollno, name, section){//constructor function
+    this.studId = id;   // studId is variable, id studentInfo parameter
+    this.studRollno=rollno;
+    this.studName=name;
+    this.studSection=section;
+}
+//Create object declare the values
+var studentOne = new studentInfo(1, 10001, "Raj", "Xth-B");
+var studentTwo = new studentInfo(2, 10002, "Ravi", "Xth-B");  
+var studentThree = new studentInfo(3, 10003, "Revathi", "Xth-B");  
+
+console.log("studentOne Name :" + studentOne.studName);
+console.log("studentTwo Section :" + studentTwo.studSection);
+console.log("studentThree RollNo :" + studentThree.studRollno);
+
+console.log(studentOne); //StudentOne record
+console.log(studentTwo); //StudentTwo record
+console.log(studentThree); //StudentThree record
+</script>
+
+</body>
+</html>
